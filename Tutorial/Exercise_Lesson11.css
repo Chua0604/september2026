@@ -1,0 +1,38 @@
+body {
+background-color: gold;
+font-family: cursive;
+font-size: 200%;
+}
+
+h1 {
+color: #D1C4E9;
+padding: 15px;
+background: purple;
+font-family: algerian;
+font-size: 300%;
+}
+
+font.bold{
+font-weight: bold;
+color: #D1C4E9;
+}
+
+font.color{
+color: purple;
+}
+
+.border {
+line-height: 150%;
+border-style: double;
+border-color: purple;
+border-radius: 20px;
+box-shadow: 10px 10px 20px #D1C4E9;
+color: purple;
+text-align: center;
+}
+
+.shadow {
+color: white;
+letter-spacing: 5px;
+text-shadow: 5px 5px 10px black;
+}
