@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="nakexia_icon.png" type="image/png">
+<title>Login Page</title>
+</head>
+<body style="margin: 0; padding: 0;
+ min-height:100%;
+background-color:green;
+background-image: url('nakexia.jpg');
+ background-repeat: no-repeat;
+background-size: 100% 100%;
+ justify-content: center;
+text-align: center;
+display: flex;padding:80px;">
+
+
+
+<div class="tenor-gif-embed" data-postid="14158200339675971055" data-share-method="host" data-aspect-ratio="0.654619" data-width="10%"></div>
+
+<table align=center style="background-color:white;box-shadow:5px 5px 10px #87FFBF;padding:10px;width:55%">
+
+
+
+<tr>
+<td style="background-image: url('background.png');background-size: 300px;width:200%; color:#87FFBF;">
+
+<h1 style="font-size: 35px;color: #87FFBF; text-align: center;">Anaxa Fan Club</h1>
+<br>
+
+<p style="font-size: 30px;">
+<span style="font-size:40px;">Welcome</span> to the Anaxa Fan Club
+This is a little corner just for Anaxa fans</p>
+</td>
+<td > 
+<img src="nakexia_icon.png" width=500px>
+<h2>Login Page</h2>
+<br>
+
+    <form onsubmit="return checkForm()">
+      <label for="username">Username:</label><br>
+      <input type="text"style="border-radius: 20px; padding: 10px 30px; " id="username" name="username"><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" style="border-radius: 20px; padding: 10px 30px; "id="password" name="password"><br><br>
+
+     <input type="submit" value="Login" style="background-color: #87FFBF; color: #333; border: none; border-radius: 20px; padding: 10px 30px; font-size: 16px; cursor: pointer;">
+    </form>
+
+<br>
+<script>
+window.addEventListener('load', function() {
+const response = confirm("1. You must like Anaxa.\n2. You must like Anaxa.\n\nRead Carefully and click OK to confirm.");
+console.log(response); 
+
+if (! response) {
+  document.getElementById("username").disabled = true;
+  document.getElementById("password").disabled = true;
+}});
+function checkForm() {
+  const user = document.getElementById("username").value.trim();
+  const pass = document.getElementById("password").value;
+
+  if (!user) {
+    alert("Please enter your username!");
+    return false; 
+  }
+  if (user.length < 4) {
+    alert("Username must be at least 4");
+    return false;
+  }
+  if (!pass) {
+    alert("Please enter your passwprd!");
+    return false;
+  }
+  if (pass.length < 6) {
+    alert("Password must be at least 6 characters!");
+    return false;
+  }
+
+  alert("Welcome ! " + user);
+  return true;
+}
+</script>
+  </td>
+</tr>
+</table>
+<div class="tenor-gif-embed" data-postid="14158200339675971055" data-share-method="host" data-aspect-ratio="0.654619" data-width="10%"><a href="https://tenor.com/view/anaxa-hsr-anaxahsr-anaxa-hsr-dance-gif-14158200339675971055">Anaxa Hsr GIF</a>from <a href="https://tenor.com/search/anaxa-gifs">Anaxa GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+</body>
+</html>
