@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel=icon href=green.png type=image/png>
+<title>Login Page — 🌿 GreenLife</title>
+<script>
+
+function checkForm() {
+  const user = document.getElementById("username").value.trim();
+  const pass = document.getElementById("password").value;
+
+  if (!user) {
+    alert("Please enter your username!");
+    return false; 
+  }
+  if (user.length < 4) {
+    alert("Username must be at least 4");
+    return false;
+  }
+  if (!pass) {
+    alert("Please enter your passwprd!");
+    return false;
+  }
+  if (pass.length < 6) {
+    alert("Password must be at least 6 characters!");
+    return false;
+  }
+
+  window.location.href = "car.html?username=" + encodeURIComponent(user);
+  return false;
+}
+
+</script>
+
+</head>
+<body style="margin: 0; padding: 0;
+ min-height:100%;
+background-color: #1B4D3E;
+ background-repeat: no-repeat;
+background-size: 100% 100%;
+ justify-content: center;
+text-align: center;
+padding:200px;">
+
+
+
+<table align=center style="border-radius: 40px;background-color:#f9f9f9;box-shadow:5px 5px 10px #87FFBF;padding:50px;width:55%">
+
+<tr>
+
+<td > 
+<img src="green.png" style="width: 190px;">
+<h2>Login Page🌿</h2>
+<br>
+
+    <form onsubmit="return checkForm()">
+      <label for="username">Username:</label><br>
+      <input type="text"style="border-radius: 20px; padding: 10px 30px; " id="username" name="username"><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" style="border-radius: 20px; padding: 10px 30px; "id="password" name="password"><br><br>
+
+     <input type="submit" value="Login" style="background-color: #00D27F; color: #333; border: none; border-radius: 20px; padding: 10px 30px; font-size: 16px; cursor: pointer;">
+    </form>
+
+<br>
+  </td>
+</tr>
+</table>
+</body>
+</html>
