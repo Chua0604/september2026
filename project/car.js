@@ -4,6 +4,19 @@ const navLinks = document.querySelector('.nav-links');
 if(menuToggle && navLinks){
   menuToggle.addEventListener('click', () => navLinks.classList.toggle('show'));
 }
+// 欢迎
+function getQueryParam(name) {
+ const params = new URLSearchParams(window.location.search);
+ return params.get(name);
+}
+
+window.addEventListener('load', function () {
+ const username = getQueryParam('username');
+	if (username) {
+	alert("Welcome! " + username + " 🎉");
+	history.replaceState({}, document.title, window.location.pathname);
+	}
+});
 
 // 购物车
 let cart = JSON.parse(localStorage.getItem('greenleafCart')) || [];
