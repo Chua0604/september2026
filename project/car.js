@@ -13,7 +13,7 @@ function getQueryParam(name) {
 window.addEventListener('load', function () {
  const username = getQueryParam('username');
 	if (username) {
-	alert("Welcome! " + username + " 🎉");
+	alert("Welcome! " + username );
 	history.replaceState({}, document.title, window.location.pathname);
 	}
 });
@@ -123,7 +123,7 @@ function checkoutCart() {
 	cart = [];
 	saveCart();
 	updateCartUI();
-	alert("Payment successful! Thank you for shopping with GreenLeaf! 🎉");
+	alert("Payment successful! Thank you for shopping with GreenLife! ");
 	}
 }
 
